@@ -17,22 +17,26 @@
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: #40513B;
+    background-color: #9DC08B;
     padding: 20px;
     text-align: center;
     align-items: center;
     transition: padding 0.5s;
 }
 
-.menu-icon {
-    margin-bottom: 10px;
+.btnMenuNavBar {
+    display: none;
 }
 
 .menu {
     display: none;
     list-style-type: none;
     text-decoration: none;
-    position: absolute;
+    border-radius: 5px;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -41,27 +45,36 @@
         width: 100%;
         text-align: center;
     }
+
+    .btnMenuNavBar {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) {
     .menu {
-        top: 0px;
-        left: 83%;
-        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        font-size: 20px;
+        margin: 0 20px 0 0;
     }
 }
 
 header button {
-    background-color: #40513B;
+    background-color: #9DC08B;
     cursor: pointer;
     border: solid 1px #000000;
     border-radius: 5px;
     padding: 10px;
+    transition: background-color 0.5s;
+    margin: 20px;
 }
 
 header button:hover {
-    background-color: #808080;
+    background-color: #609966;
     color: #FFFFFF;
+    transition: background-color 0.5s;
 }
 
 header a {

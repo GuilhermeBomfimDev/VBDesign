@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Styles/header.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>Arquitetura e Design de Interiores</title>
@@ -15,7 +15,7 @@
 
     <script>
         $(document).ready(function() {
-            $('.menu-icon').click(function() {
+            $('.btnMenuNavBar').click(function() {
                 if ($('.menu').is(':visible')) {
                     $(".menu").stop(true, true).slideUp(500);
                     $(".header").css("padding", "20px");
@@ -31,7 +31,7 @@
     <header class="header">
         <h1 class="fontHeaderH1">VB Design</h1>
         <nav>
-            <button class="menu-icon"><img width="32" height="32" src="https://img.icons8.com/laces/64/menu.png" alt="menu"/></button>
+            <button class="btnMenuNavBar"><img width="32" height="32" src="https://img.icons8.com/laces/64/menu.png" alt="menu"/></button>
             <ul class="menu fontHeaderH1">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
