@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <link rel="stylesheet" href="/Styles/header.css">
+    <link rel="stylesheet" href="/Styles/slider.css">
+    <link rel="stylesheet" href="/Styles/main.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>Arquitetura e Design de Interiores</title>
@@ -12,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 
     <script>
         $(document).ready(function() {
@@ -25,14 +29,42 @@
                 }
             });
         });
+
+        $(document).ready(function() {
+            let index = 0;
+            const slides = $(".slide");
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.removeClass("active").eq(index).addClass("active");
+            }
+
+            $(".next").click(function() {
+                index = (index + 1) % totalSlides;
+                showSlide(index);
+            });
+
+            $(".prev").click(function() {
+                index = (index - 1 + totalSlides) % totalSlides;
+                showSlide(index);
+            });
+        });
+
+        $(document).ready(function() {
+            if(window.innerWidth < 768) {
+                $("#imgSetaBotao").hide();
+            } else {
+                $("#imgSetaBotao").show();
+            }
+        });
     </script>
 </head>
 <body>
     <header class="header">
-        <h1 class="fontHeaderH1">VB Design</h1>
+        <h1 class="fontModerna">VB Design</h1>
         <nav>
-            <button class="btnMenuNavBar"><img width="32" height="32" src="https://img.icons8.com/laces/64/menu.png" alt="menu"/></button>
-            <ul class="menu fontHeaderH1">
+            <button class="btnMenuNavBar"><img width="24" height="24" src="https://img.icons8.com/laces/64/menu.png" alt="menu"/></button>
+            <ul class="menu fontModerna">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
@@ -40,5 +72,34 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="section1">
+            <div class="textSection1">
+                <h2 class="fontRaleway">Crie o ambiente do seus Sonhos</h2>
+
+                <p class="fontInconsolata">Transforme seus lar em uma verdadeira obra de arte! Cada detalhe do seu ambiente reflete sua personalidade, e com um design sofisticado, funcional e único, você pode viver a experiência de um lar que combina conforto, estilo e inovação.
+                <br><br>
+                Deixe-se inspirar por projetos que reinventam ambientes e elevam o conceito de decoração a um novo nível. Seu sonho merece sair do papel e se tornar realidade!
+                <br><br>
+                🔹 Soluções personalizadas para cada espaço<br>
+                🔹 Materiais de alta qualidade e acabamentos impecáveis<br>
+                🔹 Design moderno e exclusivo, pensado para você</p>
+
+                <button class="fontInconsolata">VEJA ALGUNS  PROJETOS <img id="imgSetaBotao" width="24" height="24" style="margin-left: 10px;" src="https://img.icons8.com/?size=100&id=85504&format=png&color=FFFFFF" alt="right"/></button>
+            </div>
+            <div class="slideContainer">
+                <div class="imageSection1">
+                    <img class="slide active" src="/Images/salaDeJantar.jpg" alt="Imagem de uma Sala de Jantar"/>
+                    <img class="slide" src="/Images/salaDeEstar.jpg" alt="Imagem de uma Sala de Estar"/>
+                    <img class="slide" src="/Images/cozinha.jpg" alt="Imagem de uma Cozinha"/>
+                </div>
+                <div class="slideButtons">
+                    <button class="prev">&lt;</button>
+                    <button class="next">&gt;</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
 </body>
 </html>

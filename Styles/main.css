@@ -1,0 +1,78 @@
+.fontRaleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.fontInconsolata {
+    font-family: "Inconsolata", serif;
+    font-optical-sizing: auto;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textSection1, .imageSection1 {
+    width: 100%;
+}
+
+.textSection1 h2 {
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+.textSection1 p {
+    margin: 20px 10px 20px 10px;
+    line-height: 21px;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.textSection1 button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 12px 25px 12px 25px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: semi-bold;
+}
+
+@media (min-width: 768px) {
+    .section1 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .textSection1 {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .textSection1 h2 {
+        font-size: 50px;
+    }
+
+    .textSection1 p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .imageSection1 img {
+        height: 700px;
+    }
+}
