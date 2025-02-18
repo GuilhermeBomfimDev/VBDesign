@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Arquitetura e Design de Interiores</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">  
+
+    <script>
+        $(document).ready(function() {
+            $('.menu-icon').click(function() {
+                if ($('.menu').is(':visible')) {
+                    $(".menu").stop(true, true).slideUp(500);
+                    $(".header").css("padding", "20px");
+                } else {
+                    $(".menu").stop(true, true).slideDown(500);
+                    $(".header").css("padding", "40px 20px 40px 20px");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="fontHeaderH1">VB Design</h1>
+        <nav>
+            <button class="menu-icon"><img width="32" height="32" src="https://img.icons8.com/laces/64/menu.png" alt="menu"/></button>
+            <ul class="menu fontHeaderH1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
