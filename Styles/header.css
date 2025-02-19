@@ -51,6 +51,7 @@ header h1 {
 
     .btnMenuNavBar {
         display: block;
+        border: solid 1px #FFFFFF;
     }
 }
 
