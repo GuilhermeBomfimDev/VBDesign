@@ -16,6 +16,9 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #609966;
 }
 
 .section3Images img {
@@ -38,6 +41,7 @@
         flex-direction: row;   
         gap: 40px; 
         margin-bottom: 40px;
+        border-bottom: none;
     }
 
     .section3Images img {

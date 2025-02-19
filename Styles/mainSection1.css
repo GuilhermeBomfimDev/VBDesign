@@ -5,10 +5,11 @@
     font-style: normal;
 }
 
-.fontInconsolata {
-    font-family: "Inconsolata", serif;
-    font-optical-sizing: auto;
-}
+.fontVarela {
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .section1 {
     display: flex;
@@ -49,6 +50,12 @@
     color: white;
     font-size: 16px;
     font-weight: semi-bold;
+    transition: background-color 1s;
+}
+
+.textSection1 button:hover {
+    background-color: #609966;
+    transition: background-color 1s;
 }
 
 @media (min-width: 768px) {
