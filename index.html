@@ -6,7 +6,8 @@
   
     <link rel="stylesheet" href="/Styles/header.css">
     <link rel="stylesheet" href="/Styles/slider.css">
-    <link rel="stylesheet" href="/Styles/main.css">
+    <link rel="stylesheet" href="/Styles/mainSection1.css">
+    <link rel="stylesheet" href="/Styles/mainSection2.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <title>Arquitetura e Design de Interiores</title>
@@ -31,6 +32,16 @@
         });
 
         $(document).ready(function() {
+            if(window.innerWidth < 768) {
+                $(".prev").hide();
+                $(".next").hide();
+            } else {
+                $(".prev").show();
+                $(".next").show();
+            }
+        });
+
+        $(document).ready(function() {
             let index = 0;
             const slides = $(".slide");
             const totalSlides = slides.length;
@@ -48,6 +59,11 @@
                 index = (index - 1 + totalSlides) % totalSlides;
                 showSlide(index);
             });
+
+            setInterval(function() {
+                index = (index + 1) % totalSlides;
+                showSlide(index);
+            }, 5000);
         });
 
         $(document).ready(function() {
@@ -74,18 +90,8 @@
     </header>
     <main>
         <section class="section1">
-            <div class="textSection1">
-                <h2 class="fontRaleway">Crie o ambiente do seus Sonhos</h2>
-
-                <p class="fontInconsolata">Transforme seus lar em uma verdadeira obra de arte! Cada detalhe do seu ambiente reflete sua personalidade, e com um design sofisticado, funcional e único, você pode viver a experiência de um lar que combina conforto, estilo e inovação.
-                <br><br>
-                Deixe-se inspirar por projetos que reinventam ambientes e elevam o conceito de decoração a um novo nível. Seu sonho merece sair do papel e se tornar realidade!
-                <br><br>
-                🔹 Soluções personalizadas para cada espaço<br>
-                🔹 Materiais de alta qualidade e acabamentos impecáveis<br>
-                🔹 Design moderno e exclusivo, pensado para você</p>
-
-                <button class="fontInconsolata">VEJA ALGUNS  PROJETOS <img id="imgSetaBotao" width="24" height="24" style="margin-left: 10px;" src="https://img.icons8.com/?size=100&id=85504&format=png&color=FFFFFF" alt="right"/></button>
+            <div class="textSection1" style="background-color: #9DC08B;">
+                <h2 class="fontRaleway" style="color: #ffffff;">Crie o ambiente do seus Sonhos</h2>
             </div>
             <div class="slideContainer">
                 <div class="imageSection1">
@@ -93,11 +99,52 @@
                     <img class="slide" src="/Images/salaDeEstar.jpg" alt="Imagem de uma Sala de Estar"/>
                     <img class="slide" src="/Images/cozinha.jpg" alt="Imagem de uma Cozinha"/>
                 </div>
-                <div class="slideButtons">
-                    <button class="prev">&lt;</button>
-                    <button class="next">&gt;</button>
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+            <div class="textSection1">
+                <p class="fontInconsolata">Transforme seus lar em uma verdadeira obra de arte! Cada detalhe do seu ambiente reflete sua personalidade, e com um design sofisticado, funcional e único, você pode viver a experiência de um lar que combina conforto, estilo e inovação.
+                    <br><br>
+                    Deixe-se inspirar por projetos que reinventam ambientes e elevam o conceito de decoração a um novo nível. Seu sonho merece sair do papel e se tornar realidade!
+                    <br><br>
+                    🔹 Soluções personalizadas para cada espaço<br>
+                    🔹 Materiais de alta qualidade e acabamentos impecáveis<br>
+                    🔹 Design moderno e exclusivo, pensado para você<br>
+                    🔹 Projetos feitos de acordo com seu desejo</p>
+    
+                    <button class="fontInconsolata">VEJA ALGUNS  PROJETOS <img id="imgSetaBotao" width="24" height="24" style="margin-left: 10px;" src="https://img.icons8.com/?size=100&id=85504&format=png&color=FFFFFF" alt="right"/></button>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="section2ContainerLeft">
+                <div class="imagesSection2">
+                    <img src="/Images/Rectangle 5.png" alt="Imagem de ambiente"/>
+                    <img src="/Images/Rectangle 6.png" alt="Imagem de ambiente"/>
+                </div>
+                <div class="boxResume">
+                    <div class="boxResumeText fontRaleway">2<br>Anos</div>
+                    <div class="boxResumeTextMid fontRaleway">100+<br>Projetos</div>
+                    <div class="boxResumeText fontRaleway">40+<br>Imóveis</div>
                 </div>
             </div>
+            <div class="section2ContainerRight">
+                <div class="textSection2">
+                    <h2 class="fontRaleway">Olá! Sou a Arquiteta e Projetista Viviane Bomfim</h2>
+                    <p class="fontInconsolata">
+                        Trabalho como projetista para a <b>Italínea</b> e tenho experiência com dezenas de projetos de todos os tipos. Meu objetivo é transformar ambientes em espaços funcionais, sofisticados e aconchegantes, que atendam às necessidades e desejos de nossos clientes. 
+                        <br><br>
+                        Atualmente estou cursando a faculdade de Arquitetura afim de me aprimorar e trazer ainda mais qualidade e inovação para os projetos que desenvolvo.
+                        <br><br>
+                        Atuo em diversos tipos de projetos, como residenciais, comerciais, corporativos e de interiores. E após me formar, extenderei meus serviços para projetos de arquitetura e urbanismo.
+                        <br><br>
+                        Se você deseja transformar seu ambiente em um espaço único e personalizado, entre em contato comigo e vamos juntos criar o ambiente dos seus sonhos!
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+        <section class="section3">
             
         </section>
     </main>

@@ -23,12 +23,20 @@
 }
 
 .prev, .next {
-    background: #00000080;
+    background: #40513B;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-    width: 100px;
+    width: 60px;
+}
+
+.prev:hover, .next:hover {
+    background: #9DC08B;
+}
+
+@media (max-width: 768px) {
+    
 }
 
 @media (min-width: 768px) {
@@ -43,5 +51,17 @@
 
     .slide.active {
         display: block;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        transition: 0.3s;
+        z-index: 10;
+    }
+
+    .next {
+        right: 0;
     }
 }

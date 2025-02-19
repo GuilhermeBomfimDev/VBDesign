@@ -1,0 +1,125 @@
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px #609966;
+}
+
+.imagesSection2 {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.boxResume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #9DC08B;
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+}
+
+.boxResumeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.boxResumeTextMid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-left: solid 1px #609966;
+    border-right: solid 1px #609966;
+    padding: 10px 20px 10px 20px;
+}
+
+.textSection2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.textSection2 h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.textSection2 p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .section2 {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesSection2 {
+        align-items: initial;
+    }
+
+    .section2 img {
+        width: 300px;
+    }
+    
+    .section2ContainerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;   
+    }
+
+    .section2ContainerRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;  
+        margin: 30px;   
+    }
+
+    .textSection2 h2 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        text-align: left;
+    }
+    
+    .textSection2 p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .imageSection2Left {
+        width: 200%;
+    }
+
+    .boxResume {
+        flex-direction: row;
+        width: 40%;
+    }
+}
