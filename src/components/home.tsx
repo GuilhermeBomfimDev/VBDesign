@@ -99,7 +99,7 @@ const itemVariants = {
     flex justify-between items-center
   `}
   >
-    {/* --- CÓDIGO CORRIGIDO E ESTÁVEL --- */}
+    {/* --- CÓDIGO CORRIGIDO E ESTÁVEL ---- */}
     <a 
       onClick={scrollToTop} 
       // Usamos margens pequenas para o ajuste fino
