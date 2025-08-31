@@ -15,15 +15,15 @@ interface PortfolioProps {
 }
 
 const allProjects: Project[] = [
-  { id: "1", title: "Sala Moderna", category: "Salas", imageUrl: "images/Portfolio/sala2.jpg", description: "Ambiente sofisticado que combina elementos clássicos e contemporâneos, criando uma sala de estar acolhedora e elegante. Destaque para o piano, o lustre e o mobiliário em tons neutros, que reforçam o estilo atemporal do projeto." },
-  { id: "2", title: "Sala2", category: "Salas", imageUrl: "images/Portfolio/sala1.jpg", description: "Hall de entrada sofisticado com painel de madeira ripada, criando uma atmosfera acolhedora e moderna. O design inclui um aparador suspenso e espelho, otimizando a sensação de espaço e elegância." },
-  { id: "3", title: "Quarto Principal", category: "Quartos", imageUrl: "images/Portfolio/quarto4.jpg", description: "Quarto projetado com paleta neutra e iluminação embutida para criar um ambiente acolhedor e sofisticado. O mobiliário planejado otimiza o espaço, trazendo funcionalidade e conforto em cada detalhe." },
-  { id: "4", title: "Quarto2", category: "Quartos", imageUrl: "images/Portfolio/quarto3.jpg", description: "Cores suaves e móveis funcionais." },
-  { id: "5", title: "Cozinha Integrada", category: "Cozinhas", imageUrl: "images/Portfolio/cozinha1.jpg", description: "Cozinha com armários em tons neutros e amadeirados, bancada em granito e ilha central que divide o ambiente, combinando funcionalidade com um design clean e sofisticado." },
-  { id: "6", title: "Cozinha2", category: "Cozinhas", imageUrl: "images/Portfolio/cozinha2.jpg", description: "Bancada em quartzo e eletrodomésticos modernos." },
-  { id: "7", title: "Sala3", category: "Salas", imageUrl: "images/Portfolio/sala3.jpg", description: "Conforto e tecnologia para o seu lazer." },
-  { id: "8", title: "Quarto3", category: "Quartos", imageUrl: "images/Portfolio/quarto1.jpg", description: "Um espaço acolhedor para receber bem." },
-  { id: "9", title: "Cozinha3", category: "Cozinhas", imageUrl: "images/Portfolio/cozinha3.jpg", description: "Praticidade e estilo em um só lugar." },
+  { id: "1", title: "Sala Moderna", category: "Salas", imageUrl: "/VBDesign/images/Portfolio/sala2.jpg", description: "Ambiente sofisticado que combina elementos clássicos e contemporâneos, criando uma sala de estar acolhedora e elegante. Destaque para o piano, o lustre e o mobiliário em tons neutros, que reforçam o estilo atemporal do projeto." },
+  { id: "2", title: "Sala2", category: "Salas", imageUrl: "/VBDesign/images/Portfolio/sala1.jpg", description: "Hall de entrada sofisticado com painel de madeira ripada, criando uma atmosfera acolhedora e moderna. O design inclui um aparador suspenso e espelho, otimizando a sensação de espaço e elegância." },
+  { id: "3", title: "Quarto Principal", category: "Quartos", imageUrl: "/VBDesign/images/Portfolio/quarto4.jpg", description: "Quarto projetado com paleta neutra e iluminação embutida para criar um ambiente acolhedor e sofisticado. O mobiliário planejado otimiza o espaço, trazendo funcionalidade e conforto em cada detalhe." },
+  { id: "4", title: "Quarto2", category: "Quartos", imageUrl: "/VBDesign/images/Portfolio/quarto3.jpg", description: "Cores suaves e móveis funcionais." },
+  { id: "5", title: "Cozinha Integrada", category: "Cozinhas", imageUrl: "/VBDesign/images/Portfolio/cozinha1.jpg", description: "Cozinha com armários em tons neutros e amadeirados, bancada em granito e ilha central que divide o ambiente, combinando funcionalidade com um design clean e sofisticado." },
+  { id: "6", title: "Cozinha2", category: "Cozinhas", imageUrl: "/VBDesign/images/Portfolio/cozinha2.jpg", description: "Bancada em quartzo e eletrodomésticos modernos." },
+  { id: "7", title: "Sala3", category: "Salas", imageUrl: "/VBDesign/images/Portfolio/sala3.jpg", description: "Conforto e tecnologia para o seu lazer." },
+  { id: "8", title: "Quarto3", category: "Quartos", imageUrl: "/VBDesign/images/Portfolio/quarto1.jpg", description: "Um espaço acolhedor para receber bem." },
+  { id: "9", title: "Cozinha3", category: "Cozinhas", imageUrl: "/VBDesign/images/Portfolio/cozinha3.jpg", description: "Praticidade e estilo em um só lugar." },
 ];
 
 const categories = ["Salas", "Quartos", "Cozinhas"];

@@ -106,7 +106,7 @@ const itemVariants = {
       className="cursor-pointer ml-6 -mt-0"
     >
       <img 
-        src="images/vbdesignlogo.png" 
+        src="/VBDesign/images/vbdesignlogo.png" 
         alt="Logo VB Design" 
         className="h-11 w-auto" 
       />
@@ -250,7 +250,7 @@ const itemVariants = {
 >
   {/* Imagem de fundo fixa */}
   <img
-    src="images/designex.jpeg"
+    src="/VBDesign/images/designex.jpeg"
     alt="Sala moderna"
     className="absolute top-0 left-0 w-full h-full object-cover"
   />
@@ -316,12 +316,12 @@ const itemVariants = {
         {/* Coluna da Esquerda: Imagens */}
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="images/SobreNos1.jpg"
+            src="/VBDesign/images/SobreNos1.jpg"
             alt="Interior design example 1"
             className="rounded-lg shadow-md w-full h-auto"
           />
           <img
-            src="images/SobreNos2.jpg"
+            src="/VBDesign/images/SobreNos2.jpg"
             alt="Interior design example 2"
             className="rounded-lg shadow-md w-full h-auto"
           />
@@ -525,7 +525,7 @@ const itemVariants = {
         <div className="order-1 md:order-2 flex justify-center"> {/* Adicionado flex e justify-center para garantir o alinhamento */}
           {/* A MUDANÇA ESTÁ AQUI: aumentei os valores de w- e h- */}
           <img
-            src="images/VivianeFoto1.jpg"
+            src="/VBDesign/images/VivianeFoto1.jpg"
             alt="Viviane Bomfim"
             className="rounded-full w-64 h-64 object-cover md:w-80 md:h-80 border-4 border-background shadow-lg"
           />
